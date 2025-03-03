@@ -152,12 +152,12 @@ console.log(Math.min(...[12, 13, 52, 68, 2, 23, 5]));
 
 // Exercice 3.4 : Transforme cette fonction pour qu'elle puisse prendre
 // un nombre indéfini de paramètres car actuellement elle en prend que 3
-function min(a, b, c) {
-  return Math.min(a, b, c);
+function min(numbers) {
+  return Math.min(...numbers);
 }
 
 console.log("Exercice 3.4");
-console.log(min(12, 13, 52, 68, 2, 23, 5)); // Le résultat doit être 2
+console.log(min([12, 13, 52, 68, 2, 23, 5])); // Le résultat doit être 2
 
 /**
  * Exercice 4

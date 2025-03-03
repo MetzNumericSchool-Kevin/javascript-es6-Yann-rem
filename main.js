@@ -202,7 +202,7 @@ console.log(person2);
  */
 
 // Exercice 5.1 : Convertir en fonction fléchée
-const thatsAllFolks = function () {
+const thatsAllFolks = () => {
   console.log("That's all folks!");
 };
 

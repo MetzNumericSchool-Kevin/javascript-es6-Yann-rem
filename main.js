@@ -191,7 +191,7 @@ console.log("Exercice 4.3");
 console.log(completeAdress);
 
 // Exercice 4.4 : Utilise l'opérateur de dispersion pour copier l'objet person et modifier la valeur de l'age à 20
-const person2 = Object.assign({}, person, { age: 20 });
+const person2 = { ...person, age: 20 };
 
 console.log("Exercice 4.4");
 console.log(person2);

@@ -78,9 +78,13 @@ console.log(title, editor, tome);
 // Exercice 2.4 : Décompose l'objet pour récupérer le nom du personnage principal,
 // le nom du premier personnage secondaire
 // et la voix Japonaise dans l'anime du second personnage secondaire
-const mainCharacterName = roman.mainCharacter.name;
-const secondCharacterName = roman.characters[0].name;
-const thirdCharacterJapaneseVoice = roman.characters[1].animeJapaneseVoice;
+const {
+  mainCharacter: { name: mainCharacterName },
+  characters: [
+    { name: secondCharacterName },
+    { animeJapaneseVoice: thirdCharacterJapaneseVoice },
+  ],
+} = roman;
 
 console.log("Exercice 2.4");
 console.log(

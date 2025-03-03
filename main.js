@@ -173,7 +173,7 @@ console.log(moreColors);
 // Exercice 4.2 : Utilise l'opérateur de dispersion pour créer un nouveau tableau
 // où Red est ajouté au début, et "Violet" à la fin
 const partialRainbow = ["Orange", "Yellow", "Green", "Blue", "Indigo"];
-const rainbow = ["Red"].concat(partialRainbow, ["Violet"]);
+const rainbow = ["Red", ...partialRainbow, "Violet"];
 
 console.log("Exercice 4.2");
 console.log(rainbow);

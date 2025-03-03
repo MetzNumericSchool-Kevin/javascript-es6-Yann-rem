@@ -165,7 +165,7 @@ console.log(min([12, 13, 52, 68, 2, 23, 5])); // Le résultat doit être 2
  */
 
 // Exercice 4.1 : Utilise l'opérateur de dispersion pour ajouter "Pink" et "Magenta" dans un nouveau tableau
-const moreColors = colors.concat("Pink", "Magenta");
+const moreColors = [...["Pink", "Magenta"]];
 
 console.log("Exercice 4.1");
 console.log(moreColors);

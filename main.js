@@ -136,11 +136,7 @@ console.log(restOfColors);
 // Exercice 3.2 : Décompose l'objet, de telle sorte à ce que le reste contienne seulement les clés
 // titre, editeur, tome, titre, auteur
 
-const roman2 = {};
-roman2.title = roman.title;
-roman2.editor = roman.editor;
-roman2.tome = roman.tome;
-roman2.auteur = roman.auteur;
+const roman2 = { ...[roman.title, roman.editor, roman.tome, roman.author] };
 
 console.log("Exercice 3.2");
 console.log(roman2);

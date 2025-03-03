@@ -234,12 +234,10 @@ console.log(convertToPerson(["John", "Doe"]));
 
 // Exercice 6 : raccourci l'assignation à l'objet
 
-function convertToPerson2([firstname, lastname]) {
-  return {
-    firstname: firstname,
-    lastname: lastname,
-  };
-}
+const convertToPerson2 = ([firstname, lastname]) => ({
+  firstname,
+  lastname,
+});
 
 console.log("Exercice 6");
 console.log(convertToPerson2(["John", "Doe"]));

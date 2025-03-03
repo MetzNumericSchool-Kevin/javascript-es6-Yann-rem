@@ -40,8 +40,7 @@ console.log("Exercice 2.1");
 console.log(red, green, blue, yellow);
 
 // Exercice 2.2 : La même chose, mais en ignorant ici "Red" et "Yellow"
-const green2 = colors[1];
-const blue2 = colors[2];
+const [, green2, blue2] = colors;
 
 console.log("Exercice 2.2");
 console.log(green2, blue2);

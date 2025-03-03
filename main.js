@@ -70,9 +70,7 @@ const roman = {
 };
 
 // Exercices 2.3 : Décompose l'objet pour récupérer le titre, l'éditeur et le tome dans des constantes
-const title = roman.title;
-const editor = roman.editor;
-const tome = roman.tome;
+const { title, editor, tome } = roman;
 
 console.log("Exercice 2.3");
 console.log(title, editor, tome);

@@ -147,7 +147,8 @@ const randomNumbers = [12, 13, 52, 68, 2, 23, 5];
 // Exercice 3.3 : Math.min prend un nombre indéfini d'arguments
 // Utilise l'opérateur de reste pour pouvoir passer un tableau
 console.log("Exercice 3.3");
-console.log(Math.min(12, 13, 52, 68, 2, 23, 5));
+
+console.log(Math.min(...[12, 13, 52, 68, 2, 23, 5]));
 
 // Exercice 3.4 : Transforme cette fonction pour qu'elle puisse prendre
 // un nombre indéfini de paramètres car actuellement elle en prend que 3

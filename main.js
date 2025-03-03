@@ -114,8 +114,8 @@ const person = {
 };
 
 // Exercice 2.6 : Fais une décomposition du paramètre pour extraire directement le prénom et le nom
-function hello(person) {
-  console.log(`Bonjour ${person.firstname} ${person.lastname} !`);
+function hello({ firstname, lastname }) {
+  console.log(`Bonjour ${firstname} ${lastname} !`);
 }
 
 console.log("Exercice 2.6");

@@ -34,10 +34,7 @@ console.log(
 const colors = ["Red", "Green", "Blue", "Yellow"];
 
 // Exercice 2.1 : Utilise la décomposition pour créer les constantes de couleurs plutôt que d'accéder aux indices
-const red = colors[0];
-const green = colors[1];
-const blue = colors[2];
-const yellow = colors[3];
+const [red, green, blue, yellow] = colors;
 
 console.log("Exercice 2.1");
 console.log(red, green, blue, yellow);
